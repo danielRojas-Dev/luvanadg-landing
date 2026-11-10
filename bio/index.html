@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Luana Thays — diseñadora gráfica y directora creativa. Todos mis links: WhatsApp, landing, Instagram y Behance.">
+<title>Luana Thays — Links</title>
+
+<link rel="icon" type="image/png" href="assets/luvana-vertical-naranja.png">
+<link rel="apple-touch-icon" href="assets/luvana-vertical-naranja.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;0,900;1,800;1,900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#441019; --red:#d9042b; --orange:#ff7900; --yellow:#ffda40; --olive:#879e00;
+  --pink:#f288c2; --sky:#a5bae7; --blue:#1e56ba; --cream:#f2ead0;
+  --sans:'Montserrat', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --serif:'Times New Roman', Times, Georgia, 'Liberation Serif', serif;
+  --hand:'Caveat', 'Segoe Print', 'Comic Sans MS', cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:var(--sans);background:var(--cream);color:var(--wine);-webkit-font-smoothing:antialiased;display:flex;justify-content:center}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+.page{position:relative;isolation:isolate;overflow:hidden;width:100%;max-width:460px;min-height:100vh;padding:52px 20px 44px}
+.page::before{content:"";position:absolute;inset:-20% -30%;z-index:-1;pointer-events:none;
+  background:
+   radial-gradient(30% 36% at 12% 10%, rgba(242,136,194,.55), transparent 70%),
+   radial-gradient(28% 34% at 85% 8%, rgba(165,186,231,.5), transparent 70%),
+   radial-gradient(32% 38% at 90% 80%, rgba(135,158,0,.35), transparent 70%),
+   radial-gradient(30% 36% at 10% 85%, rgba(255,218,64,.5), transparent 70%);
+  filter:blur(30px) saturate(1.1)}
+
+.badge{position:absolute;right:14px;top:26px;width:clamp(88px,22vw,112px);aspect-ratio:1;z-index:3;animation:spin 14s linear infinite}
+.badge text{font:800 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;fill:var(--wine)}
+@keyframes spin{to{rotate:360deg}}
+
+.head{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:26px}
+.avatar-wrap{position:relative;width:132px;height:132px}
+.avatar{width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 0 0 4px var(--wine)}
+.online{position:absolute;right:4px;top:6px;width:22px;height:22px;border-radius:50%;background:#25d366;border:4px solid var(--wine)}
+.hi{position:relative;margin-top:-14px;background:var(--yellow);color:var(--wine);border:2px solid var(--wine);box-shadow:0 4px 0 var(--wine);border-radius:999px;padding:7px 16px;font-family:var(--hand);font-weight:700;font-size:1.15rem;transform:rotate(-4deg);display:inline-flex;align-items:center;gap:6px}
+
+.name{margin:22px 0 0;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:clamp(2.4rem,11vw,3.2rem)}
+.name em{display:block;font-family:var(--serif);font-style:italic;font-weight:700;text-transform:none;color:var(--red);font-size:.78em;margin-top:.1em}
+.role{margin:14px 0 0;font-weight:600;font-size:1.02rem}
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.tags li{border:1.5px solid var(--wine);border-radius:999px;padding:6px 14px;font-weight:800;font-size:.78rem;text-transform:uppercase;background:rgba(255,255,255,.65)}
+
+.links{display:flex;flex-direction:column;gap:14px;margin-top:30px;padding:0;list-style:none}
+.row{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:20px;border:2.5px solid var(--wine);box-shadow:0 5px 0 var(--wine);background:#fff;transition:transform .15s ease, box-shadow .15s ease}
+.row:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--wine)}
+.row:active{transform:translateY(5px);box-shadow:0 0 0 var(--wine)}
+.row.yellow{background:var(--yellow)}
+.row.wine{background:var(--wine);color:var(--cream);border-color:var(--cream);box-shadow:0 5px 0 var(--cream)}
+.row.wine:hover{box-shadow:0 3px 0 var(--cream)}
+.row.wine:active{box-shadow:0 0 0 var(--cream)}
+.row.wine .row-sub{color:var(--yellow)}
+.ico{flex:0 0 auto;width:46px;height:46px;border-radius:16px;display:grid;place-items:center}
+.ico svg{width:22px;height:22px}
+.ico.wa{background:#25d366;transform:rotate(-6deg)}
+.ico.land{background:var(--yellow);transform:rotate(4deg)}
+.ico.land svg{fill:var(--wine)}
+.ico.ig{background:var(--pink);transform:rotate(-3deg)}
+.ico.be{background:var(--blue);transform:rotate(5deg);font-family:var(--serif);font-style:italic;font-weight:700;color:#fff;font-size:1.15rem}
+.row-body{flex:1;min-width:0;display:flex;flex-direction:column}
+.row-title{font-weight:900;text-transform:uppercase;font-size:1.02rem;letter-spacing:-.01em}
+.row-sub{font-weight:600;font-size:.82rem;opacity:.85}
+.row-arrow{flex:0 0 auto;font-size:1.2rem;font-weight:700}
+
+.foot{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:46px}
+.foot img{height:30px;width:auto}
+.foot span{font-weight:600;font-size:.82rem;opacity:.75}
+
+@media (prefers-reduced-motion: reduce){.badge{animation:none}}
+</style>
+</head>
+<body>
+<div class="page">
+  <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+    <defs><path id="bc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+    <circle cx="60" cy="60" r="58" fill="#ffda40" stroke="#fff" stroke-width="4"/>
+    <text><textPath href="#bc">Agenda abierta ✦ noviembre ✦ 2026 ✦</textPath></text>
+    <text x="60" y="68" text-anchor="middle" style="font-size:22px;letter-spacing:0">✋</text>
+  </svg>
+
+  <div class="head">
+    <div class="avatar-wrap">
+      <img class="avatar" src="assets/avatar-contacto-01.jpg" alt="Luana sonriendo">
+      <span class="online" aria-hidden="true"></span>
+    </div>
+    <span class="hi">hola! ✦</span>
+    <h1 class="name">Luana<em>Thays</em></h1>
+    <p class="role">Directora creativa &amp; diseñadora gráfica</p>
+    <ul class="tags">
+      <li>Branding</li><li>Redes</li><li>Video UGC</li>
+    </ul>
+  </div>
+
+  <nav aria-label="Links"><ul class="links">
+    <li><a class="row yellow" href="https://wa.me/5493704291376" target="_blank" rel="noopener">
+      <span class="ico wa"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></span>
+      <span class="row-body"><span class="row-title">Contactarme</span><span class="row-sub">Escribime por WhatsApp</span></span>
+      <span class="row-arrow" aria-hidden="true">→</span>
+    </a></li>
+    <li><a class="row wine" href="https://luvanadg.com.ar/">
+      <span class="ico land"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <span class="row-body"><span class="row-title">Landing page</span><span class="row-sub">Portfolio, servicios y tarifas</span></span>
+      <span class="row-arrow" aria-hidden="true">→</span>
+    </a></li>
+    <li><a class="row" href="https://instagram.com/luvana.dg" target="_blank" rel="noopener">
+      <span class="ico ig"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="6"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="#fff" stroke="none"/></svg></span>
+      <span class="row-body"><span class="row-title">Instagram</span><span class="row-sub">@luvana.dg</span></span>
+      <span class="row-arrow" aria-hidden="true">→</span>
+    </a></li>
+    <li><a class="row" href="https://behance.net/luanacantero" target="_blank" rel="noopener">
+      <span class="ico be">Bē</span>
+      <span class="row-body"><span class="row-title">Behance</span><span class="row-sub">behance.net/luanacantero</span></span>
+      <span class="row-arrow" aria-hidden="true">→</span>
+    </a></li>
+  </ul></nav>
+
+  <div class="foot">
+    <img src="assets/luvana-horizontal-degrade.png" alt="Luvana">
+    <span>Trabajo con marcas de todo el mundo ✦</span>
+  </div>
+</div>
+</body>
+</html>
